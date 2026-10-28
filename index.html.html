@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Click to Conversion | Marketing Analytics Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f6;--surface:#fff;--ink:#14213d;--muted:#52607a;--line:#cfd8e3;--amber:#f9ab00;--pink:#fe2c55;--cyan:#12b5b0;--ph:#fff3cf;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1830;--surface:#172444;--ink:#eaf0fb;--muted:#a3b1cc;--line:#2c3c60;--ph:#4a3b0d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1830;--surface:#172444;--ink:#eaf0fb;--muted:#a3b1cc;--line:#2c3c60;--ph:#4a3b0d;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:1.15rem;line-height:1.65}
+h1,h2,h3,.sans{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.ph{background:var(--ph);padding:0 .25em;border-radius:3px}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap;padding:1rem 0;font-family:"Bricolage Grotesque",sans-serif;font-weight:500;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+header.hero{padding:3rem 0 2.5rem}
+h1{font-size:clamp(2.4rem,7vw,5rem);line-height:1;letter-spacing:-.03em;font-weight:800;margin:0 0 1.25rem;max-width:14ch}
+.lede{max-width:38rem;color:var(--muted);font-size:1.3rem;margin:0}
+.funnel{margin:2.5rem 0 0;display:grid;gap:.5rem}
+.stage{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 1.25rem;color:#14213d;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;text-decoration:none;border-radius:6px}
+.stage small{font-weight:500;font-size:.85rem;text-align:right}
+.s1{width:100%;background:var(--pink);color:#fff}.s2{width:82%;background:var(--amber)}.s3{width:64%;background:var(--cyan)}
+.stage:hover{transform:translateX(4px)}
+@media(max-width:600px){.s2{width:92%}.s3{width:84%}.stage small{display:none}}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);letter-spacing:-.02em;margin:0 0 1rem;line-height:1.1}
+h3{font-size:1.3rem;margin:1.5rem 0 .4rem}
+p{margin:0 0 1rem;max-width:42rem}
+.meta{font-family:"Bricolage Grotesque",sans-serif;font-size:.9rem;color:var(--muted)}
+.course{background:var(--surface);border:1px solid var(--line);border-left:8px solid var(--c);border-radius:6px;padding:1.5rem;margin-bottom:1.5rem}
+.course h2{font-size:1.7rem}
+.course ul{padding-left:1.2rem;margin:.3rem 0 1rem;max-width:42rem}
+.reflect{border-left:3px solid var(--c);padding-left:1rem;font-style:italic}
+details{border-top:1px solid var(--line);padding:.75rem 0}
+summary{cursor:pointer;font-family:"Bricolage Grotesque",sans-serif;font-weight:700}
+.lab{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1.5rem}
+.lab label{display:block;font-family:"Bricolage Grotesque",sans-serif;font-weight:500;font-size:.9rem;margin:.75rem 0 .25rem}
+.lab input{width:100%;padding:.6rem .75rem;font:inherit;font-size:1rem;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:4px}
+.row{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem}
+@media(max-width:600px){.row{grid-template-columns:1fr}}
+.out{margin-top:1.25rem;padding:1rem;background:var(--bg);border:1px dashed var(--muted);border-radius:4px;word-break:break-all;font-family:ui-monospace,Consolas,monospace;font-size:.9rem;line-height:1.5}
+button{margin-top:1rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1rem;padding:.65rem 1.25rem;background:var(--ink);color:var(--bg);border:0;border-radius:4px;cursor:pointer}
+.note{font-size:.95rem;color:var(--muted)}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem}
+.cert{aspect-ratio:4/3;display:grid;place-items:center;text-align:center;padding:1rem;border:2px dashed var(--muted);border-radius:6px;font-family:"Bricolage Grotesque",sans-serif;color:var(--muted)}
+.cert b{display:block;color:var(--ink)}
+footer{padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.stage{transition:transform .2s}
+.unit{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--ink);border-radius:6px;padding:1rem 1.25rem;margin-bottom:1rem}
+.unit h3{margin:0 0 .3rem;font-size:1.15rem}.unit p{margin:0 0 .6rem}.unit p:last-child{margin:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#about">About</a><a href="#reach">Reach</a><a href="#track">Track</a><a href="#optimise">Optimise</a><a href="#class">My class</a><a href="#lab">Campaign lab</a><a href="#evidence">Evidence</a><a href="#next">What’s next</a></nav>
+
+<header class="hero">
+<p class="meta">MKT 4046 Marketing Analytics · UTech, Jamaica · Portfolio by <span class="ph">[Your Name, ID]</span></p>
+<h1>From click to conversion</h1>
+<p class="lede">What three Alison courses taught me about getting noticed on TikTok, measuring every visit in Google Analytics, and turning that data into better campaigns.</p>
+<div class="funnel" aria-label="Learning funnel">
+<a class="stage s1" href="#reach">Reach <small>TikTok Marketing Essentials</small></a>
+<a class="stage s2" href="#track">Track <small>Fundamentals of Google Analytics 4</small></a>
+<a class="stage s3" href="#optimise">Optimise <small>Online Marketing With Google Analytics</small></a>
+</div>
+</header>
+
+<section id="about">
+<h2>Why I took these courses</h2>
+<p>I enrolled in these three courses because <span class="ph">[your real motivation: career goal, business idea, curiosity about data]</span>. Marketing decisions made on gut feeling are expensive, and I wanted to learn how to back mine with evidence.</p>
+<p>Together the courses follow the path a customer takes. People first <b>reach</b> a brand on social media, the brand then <b>tracks</b> what they do, and finally it <b>optimises</b> campaigns based on what the numbers say. That is how this site is organised.</p>
+<p class="meta">Total study time: about 11 to 14 hours across three courses.</p>
+</section>
+
+<section id="reach">
+<div class="course" style="--c:var(--pink)">
+<p class="meta">Course 1 · TikTok Marketing Essentials · about 4 to 5 hours</p>
+<h2>Reach: using TikTok for business</h2>
+<h3>What I learned</h3>
+<ul>
+<li>TikTok is a business tool as well as an entertainment app, from brand profiles to full ad campaigns.</li>
+<li>The bidding and costing strategies for TikTok ads, and the two major categories of ad types.</li>
+<li>How a meme analysis framework works, and why meme marketing connects so well with Generation Z.</li>
+<li>How to use TikTok analytics and plan international reach, then design and scale an ad strategy.</li>
+</ul>
+<details><summary>Course highlight</summary><p><span class="ph">[Your favourite module and why. Example: the meme analysis framework, because it showed that humour can be studied like any other data.]</span></p></details>
+<details><summary>How I will use it</summary>
+<p><b>Personal:</b> <span class="ph">[Example: I now notice why certain brand videos on my feed hold my attention.]</span></p>
+<p><b>Professional:</b> <span class="ph">[Example: I would build a business profile for a local Jamaican brand and test a small paid campaign before scaling.]</span></p></details>
+<p class="reflect">Reflection: <span class="ph">[How this course changed how you see social media, and one challenge you faced.]</span></p>
+</div>
+</section>
+
+<section id="track" style="border-top:0;padding-top:0">
+<div class="course" style="--c:var(--amber)">
+<p class="meta">Course 2 · Fundamentals of Google Analytics 4 · about 5 to 6 hours</p>
+<h2>Track: measuring behaviour with GA4</h2>
+<h3>What I learned</h3>
+<ul>
+<li>What the Google Marketing Platform is and which services it offers.</li>
+<li>How GA4 differs from Universal Analytics, including the admin panel and how data is collected.</li>
+<li>Why Google Tag Manager is used alongside Analytics, and how to set up a demo account with a parallel GA setup.</li>
+<li>The main report types and Explorations, plus the roles of BigQuery and Google Ads.</li>
+</ul>
+<details><summary>Course highlight</summary><p><span class="ph">[Example: Explorations, because I could build my own view of the data instead of relying on fixed reports.]</span></p></details>
+<details><summary>How I will use it</summary>
+<p><b>Personal:</b> <span class="ph">[Example: tracking visitors to a personal blog or project page.]</span></p>
+<p><b>Professional:</b> <span class="ph">[Example: setting up GA4 and Tag Manager for an employer’s website, then reporting monthly on traffic sources.]</span></p></details>
+<p class="reflect">Reflection: <span class="ph">[What surprised you about moving from UA to GA4, and what was hard.]</span></p>
+</div>
+</section>
+
+<section id="optimise" style="border-top:0;padding-top:0">
+<div class="course" style="--c:var(--cyan)">
+<p class="meta">Course 3 · Online Marketing With Google Analytics · about 2 to 3 hours</p>
+<h2>Optimise: turning data into better campaigns</h2>
+<h3>What I learned</h3>
+<ul>
+<li>The types of Google Ads, and how to link Google Ads and Analytics accounts.</li>
+<li>Why assigning a value to goals helps you judge which campaigns pay off.</li>
+<li>How to build unique, measurable links with the custom URL builder (try it below).</li>
+<li>How data-driven insights can raise conversion rates.</li>
+</ul>
+<details><summary>Course highlight</summary><p><span class="ph">[Example: the URL builder, because one small tag tells you exactly which post brought each customer.]</span></p></details>
+<details><summary>How I will use it</summary>
+<p><b>Personal:</b> <span class="ph">[Example: tagging links when I share my portfolio so I can see which platform sends visitors.]</span></p>
+<p><b>Professional:</b> <span class="ph">[Example: assigning a value to a “contact us” goal and comparing campaigns by return.]</span></p></details>
+<p class="reflect">Reflection: <span class="ph">[How this course tied the other two together for you.]</span></p>
+</div>
+</section>
+
+<section id="class">
+<h2>Connecting the courses to my class</h2>
+<p>My Alison courses sit alongside MKT 4046 Marketing Analytics at UTech. Each one gave me a hands-on way to practise ideas from lectures.</p>
+<div class="unit"><h3>Unit 1: Introduction to Marketing Analytics</h3><p>Analytics exists to support management decisions, not just to produce reports. GA4 made that real: I can look at the data before choosing a page, post or campaign. <span class="ph">[One decision you could now make with data.]</span></p></div>
+<div class="unit"><h3>Unit 2: Segmentation, Targeting and Positioning</h3><p>In class we grouped customers using RFM and cluster analysis. The Online Marketing With Google Analytics course showed a practical version: building customer segments inside Google Analytics. <span class="ph">[A segment you would create, such as first-time visitors from TikTok versus returning visitors.]</span></p></div>
+<div class="unit"><h3>Units 4 and 5: Customer Loyalty and Customer Lifetime Value</h3><p>Retention, churn and lifetime value measure what a customer is worth over time. Assigning a value to goals in Google Analytics is the first step, because a conversion gets a dollar value I can compare across campaigns. <span class="ph">[Example: if a contact form is worth $X to a business, which campaign earns it back?]</span></p></div>
+<div class="unit"><h3>Unit 7: Digital Analytics</h3><p>This unit is the closest match to my certification courses: applying Google Analytics to a marketing problem and analysing visits, pageviews and referral sources. GA4 gave me the tools (reports, Explorations, Tag Manager), and the TikTok course added the social side, including TikTok analytics and meme analysis. The Campaign lab below connects them, because a tagged link tells GA4 which source sent each visitor.</p></div>
+<div class="unit"><h3>Unit 8: Data Visualization</h3><p>Unit 8 is about dashboards and telling stories with data. GA4 reports and Explorations are visual tools for this, and I built this portfolio as a visual story. <span class="ph">[A chart or report you found easiest to read, and why.]</span></p></div>
+<p class="reflect" style="border-left:3px solid var(--ink)">Takeaway: analytics is a loop of reaching people, measuring what they do, learning from it and improving. <span class="ph">[Two sentences on how this changed your view of marketing.]</span></p>
+</section>
+
+<section id="lab">
+<h2>Campaign lab: a link I would actually use</h2>
+<p>Here is a working version of the custom URL builder from Course 3. Tag a link for a TikTok post, then watch for that source in GA4 reports (Course 2) to see if the campaign worked (Course 1).</p>
+<div class="lab">
+<label for="u">Website URL</label><input id="u" value="https://example.com/offer">
+<div class="row">
+<div><label for="s">Source</label><input id="s" value="tiktok"></div>
+<div><label for="m">Medium</label><input id="m" value="paid_social"></div>
+<div><label for="c">Campaign name</label><input id="c" value="launch_week"></div>
+</div>
+<div class="out" id="out" aria-live="polite"></div>
+<button id="copy" type="button">Copy link</button> <span class="note" id="msg"></span>
+</div>
+<p class="note" style="margin-top:1rem">Next step in a real campaign: open GA4, go to Reports, then Acquisition, and compare sessions and conversions for each source.</p>
+</section>
+
+<section id="evidence">
+<h2>Evidence of learning</h2>
+<p>Certificates and screenshots from my Alison dashboard. <span class="ph">[Replace each box with your image.]</span></p>
+<div class="certs">
+<div class="cert"><div><b>Certificate</b>TikTok Marketing Essentials</div></div>
+<div class="cert"><div><b>Certificate</b>Fundamentals of Google Analytics 4</div></div>
+<div class="cert"><div><b>Certificate</b>Online Marketing With Google Analytics</div></div>
+<div class="cert"><div><b>Screenshot</b>Alison dashboard or GA4 demo account</div></div>
+</div>
+</section>
+
+<section id="next">
+<h2>What’s next</h2>
+<p>These courses gave me a working vocabulary and a first toolkit: build the audience, measure the behaviour, improve the result. <span class="ph">[Your overall takeaway in two or three sentences.]</span></p>
+<p><b>Goals:</b> <span class="ph">[Example: earn Google’s own Analytics certification, run a real campaign for a small business, and practise building GA4 Explorations on live data.]</span></p>
+<p><b>Next courses:</b> <span class="ph">[Example: SEO, email marketing, data visualisation.]</span></p>
+</section>
+
+<footer>Built for MKT 4046 Marketing Analytics, UTech Jamaica · Courses by Alison · <span class="ph">[Your Name]</span> · 2026</footer>
+</div>
+<script>
+(function(){
+var f=["u","s","m","c"].map(function(i){return document.getElementById(i)}),out=document.getElementById("out"),msg=document.getElementById("msg");
+function build(){
+var base=f[0].value.trim();if(!base){out.textContent="Enter a website URL to build your link.";return}
+var p=[["utm_source",f[1].value],["utm_medium",f[2].value],["utm_campaign",f[3].value]].filter(function(x){return x[1].trim()}).map(function(x){return x[0]+"="+encodeURIComponent(x[1].trim())}).join("&");
+out.textContent=p?base+(base.indexOf("?")>-1?"&":"?")+p:base}
+f.forEach(function(e){e.addEventListener("input",build)});build();
+document.getElementById("copy").addEventListener("click",function(){
+var t=out.textContent;
+try{navigator.clipboard.writeText(t).then(function(){msg.textContent="Copied."},function(){sel()})}catch(e){sel()}
+function sel(){var r=document.createRange();r.selectNodeContents(out);var s=window.getSelection();s.removeAllRanges();s.addRange(r);msg.textContent="Selected. Press Ctrl+C to copy."}});
+})();
+</script>
+</body>
+</html>
